@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+        <!-- my boot strap css -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- my regular stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  <section class="container d-flex justify-content-center">
+     <!-- image part -->
+    <div class="container">
+      <img src="mac.png" alt="" class="img-fluid">
+    </div>
+    <!-- product description and price part -->
+    <div>
+    <section>
+        <div class="container">
+            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p>Apple M1 chip with 8-core CPU with 4 performance cors and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8 GB unified memorey 256 GB SSD storage Two Thunderbold/USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+            <form class="form cf">
+              <!-- three sets of radio buttons -->
+                <section class="memory cf">
+                    <h2>Memory</h2>
+                    <input type="radio" name="radio1" id="memory1" value="memory1"><label class="memory1-label four col" for="memory1">8GB unified memory</label>
+                    <input type="radio" name="radio1" id="memory2" value="memory2"><label class="memory2-label four col" for="memory2">16GB unified memory</label>
+                </section>
+                <br>
+                <section class="storage cf">
+                    <h2>Storage</h2>
+                    <input type="radio" name="radio2" id="storage1" value="storage1"><label class="storage1-label four col" for="storage1">256GB SSD storage</label>
+                    <input type="radio" name="radio2" id="storage2" value="storage2"><label class="storage2-label four col" for="storage2">512GB SSD storage</label>
+                    <input type="radio" name="radio2" id="storage3" value="storage3"><label class="storage3-label four col" for="storage3">1TB SSD storage</label>
+                </section>
+                <br>
+                <section class="delivery cf">
+                    <h2>Choose your delivery option</h2>
+                    <input type="radio" name="radio3" id="delivery1" value="delivery1"><label class="delivery1-label six col" for="delivery1">Fri, Aug 25 FREE Prime Delivery</label>
+                    <input type="radio" name="radio3" id="delivery2" value="delivery2"><label class="delivery2-label six col" for="delivery2">Mon, Aug 21 Delivery charge $20</label>
+                </section>	
+                <br>
+                <!-- price part -->
+                <section>
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Best Price</th>
+                            <td id="imac-price">1299</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Extra Memory Cost</th>
+                            <td id="memory-price">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Extra Storage Cost</th>
+                            <td id="storage-price">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Delivery charge</th>
+                            <td id="delivery-price">0</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Total Price</th>
+                            <td id=total-price>1299</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </section>
+                <!-- promo code part -->
+                <section>
+                  <div>
+                    <p>Add Promo Code</p>
+                    <input type="text" id="promo-code" placeholder="Enter Promo Code">
+                    <button type="button" class="btn btn-danger" id="promo-button" style="font-size : 12px">Apply</button>
+                  </div>
+                </section>
+                <!-- discounted price part-->
+                <section>
+                  <hr hr style="color:#000000;">
+                  <h1 id = "your-total" class="centered-text"><span>Your total: $</span>1299</h1>
+                </section>
+            </form>
+           </div>
+    </section>
+    </div>
+     
+  </section>  
+    <script src="app.js"></script>
+</body>
+</html>

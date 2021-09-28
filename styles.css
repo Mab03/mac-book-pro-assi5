@@ -1,0 +1,89 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #333;
+	background-color: #eee;
+}
+
+h1{
+	font-weight: 200;
+	font-size: 30px;
+	text-align: left;
+	padding-bottom: 10px;
+	max-width: 100%;
+	margin: 20px auto;
+}
+
+h2{
+	font-weight: 700;
+    font-size: 16px;
+}
+
+p{
+	font-size: 14px;
+}
+
+/* CONTAINERS */
+
+.container {max-width: 850px; width: 100%; margin: 0 auto;}
+.four { width: 32.26%; max-width: 32.26%;}
+.six { width: 48%; max-width: 48%;}
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .memory input, .form .storage input, .form .delivery input{
+	display: none;
+}
+
+.form label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 10px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	cursor: pointer;
+	border: 2px solid transparent;
+    border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .memory input:checked + label, .form .storage input:checked + label, .form .delivery input:checked + label{
+	border: 2px solid #333;
+	background-color: #aaa; /*2fcc71 */
+}
+
+.centered-text{
+	text-align: center;
+}
